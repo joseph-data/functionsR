@@ -75,3 +75,7 @@ center4 <- function(x, fun = "mean", ...){
 center4(y)
 center4(y, "median")
 center4(y, "quantile", probs = 0.25)
+
+## lexical scoping: determines how R looks up values of objects
+x_times_y <- function(x, y){return(x*y)} # probably don't need a function for this
+x_times_y(3, 4)
